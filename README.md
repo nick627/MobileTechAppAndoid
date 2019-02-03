@@ -8,7 +8,7 @@ For Android Studio:
 
 When adding a record to the database, each of its fields is encrypted using the AES algorithm and EBC encryption mode. After encryption, all data is Base64 encoded to remove unwanted characters from them for easy storage in files and strings.
 
-For Encrypt/Decrypt use initialization vector (iv), add:
+For Encrypt/Decrypt use initialization vector (iv), add (see e.g._CryptoProvider.java):
 ```
 final byte[] iv = { 1, 2, 3, 4, 5, 6, 7, 8};
 IvParameterSpec ivParameterSpec = new IvParameterSpec(iv);

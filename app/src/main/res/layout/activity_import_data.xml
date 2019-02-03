@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImportDataActivity">
+
+    <Button
+        android:id="@+id/copyPassBtn4"
+        android:layout_width="102dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:text="@android:string/copy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createPassEnterPass3"
+        tools:text="copy pass" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="71dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:checked="true"
+        android:text="Hide"
+        app:layout_constraintEnd_toStartOf="@+id/copyPassBtn4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createPassEnterPass3" />
+
+    <EditText
+        android:id="@+id/createPassEnterPass3"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/cancelButton3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fileListForImport" />
+
+    <Button
+        android:id="@+id/importFromFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Import"
+        app:layout_constraintStart_toEndOf="@+id/cancelButton3"
+        app:layout_constraintTop_toBottomOf="@+id/fileListForImport" />
+
+    <ListView
+        android:id="@+id/fileListForImport"
+        android:layout_width="354dp"
+        android:layout_height="365dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cancelButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="cancel"
+        app:layout_constraintEnd_toStartOf="@+id/importFromFileButton"
+        app:layout_constraintStart_toEndOf="@+id/createPassEnterPass3"
+        app:layout_constraintTop_toBottomOf="@+id/fileListForImport" />
+
+</android.support.constraint.ConstraintLayout>

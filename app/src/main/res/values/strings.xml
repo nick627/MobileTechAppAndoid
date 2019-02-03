@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MobileTech4</string>
+    <string name="title_activity_creating_entry">creatingEntryActivity</string>
+    <string name="title_activity_changing_entry">ChangingEntryActivity</string>
+</resources>

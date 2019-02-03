@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExportDataActivity">
+
+    <EditText
+        android:id="@+id/filenameToExport"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="208dp"
+        android:ems="10"
+        android:hint="Filename"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exportToFileButton"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="168dp"
+        android:text="export"
+        app:layout_constraintStart_toEndOf="@+id/cancelButton4"
+        app:layout_constraintTop_toBottomOf="@+id/filenameToExport" />
+
+    <Button
+        android:id="@+id/cancelButton4"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="168dp"
+        android:text="cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filenameToExport" />
+</android.support.constraint.ConstraintLayout>
